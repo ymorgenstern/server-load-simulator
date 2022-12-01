@@ -30,7 +30,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
-      - run: cd my-app && npm run build
+      - run: cd my-app && npm install && npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v2
       - name: Upload artifact
